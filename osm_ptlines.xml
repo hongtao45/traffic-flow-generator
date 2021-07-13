@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat Jun 12 15:44:01 2021 by Eclipse SUMO netconvert Version 1.7.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/usr/local/Cellar/sumo/1.7.0/share/sumo/data/typemap/osmNetconvert.typ.xml,/usr/local/Cellar/sumo/1.7.0/share/sumo/data/typemap/osmNetconvertUrbanDe.typ.xml,/usr/local/Cellar/sumo/1.7.0/share/sumo/data/typemap/osmNetconvertPedestrians.typ.xml,/usr/local/Cellar/sumo/1.7.0/share/sumo/data/typemap/osmNetconvertBicycle.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="11746005" name="南京地铁1号线: 中国药科大学 =&gt; 迈皋桥" line="1" type="subway" vClass="rail_urban" completeness="0.11">
+        <route edges="857751482 857738627#0 857738627#1 857738624"/>
+        <busStop id="7996788918" name="张府园"/>
+        <busStop id="7999205744" name="新街口"/>
+        <busStop id="7999205742" name="珠江路"/>
+    </ptLine>
+    <ptLine id="1529762" name="南京地铁2号线: 油坊桥 =&gt; 经天路" line="2" type="subway" vClass="rail_urban" completeness="0.65">
+        <busStop id="8039975195" name="雨润大街"/>
+        <busStop id="8039975258" name="元通"/>
+        <busStop id="8039975290" name="奥体东"/>
+        <busStop id="8039975311" name="兴隆大街"/>
+        <busStop id="8039975339" name="集庆门大街"/>
+        <busStop id="8039975397" name="云锦路"/>
+        <busStop id="8039975442" name="莫愁湖"/>
+        <busStop id="8039975477" name="汉中门"/>
+        <busStop id="8039975501" name="上海路"/>
+        <busStop id="8039975518" name="新街口"/>
+        <busStop id="8040230683" name="大行宫"/>
+        <busStop id="8040236513" name="西安门"/>
+        <busStop id="8040236536" name="明故宫"/>
+        <busStop id="8040236572" name="苜蓿园"/>
+        <busStop id="8040236605" name="下马坊"/>
+        <busStop id="8040236642" name="孝陵卫"/>
+        <busStop id="8040236671" name="钟灵街"/>
+    </ptLine>
+    <ptLine id="1533791" name="南京地铁1号线: 迈皋桥 =&gt; 中国药科大学" line="1" type="subway" vClass="rail_urban" completeness="0.11">
+        <route edges="857738622 857738626#0 857738626#1 857751480"/>
+        <busStop id="7999205743" name="珠江路"/>
+        <busStop id="7999205745" name="新街口"/>
+        <busStop id="7996788886" name="张府园"/>
+    </ptLine>
+    <ptLine id="1860408" name="南京公交5路" line="5" type="bus" vClass="bus" completeness="0.50">
+        <route edges="826049219 432530595 826049220 826049218 159796724 155883037#0 155883037#1 155883037#2 155883037#3 -422206243#2 -422206243#1 -422206243#0 -422206222#2 -422206222#1 -422206222#0"/>
+        <busStop id="1562115865" name="大行宫西站"/>
+    </ptLine>
+    <ptLine id="1878719" name="南京公交46路" line="46" type="bus" vClass="bus" completeness="0.33">
+        <busStop id="1712469691" name="新街口"/>
+        <busStop id="1712469688" name="户部街"/>
+    </ptLine>
+    <ptLine id="1929972" name="南京公交1路" line="1" type="bus" vClass="bus" completeness="0.12">
+        <route edges="165486156#0 165486156#1 165486156#2 165486156#3 165486156#4 165486156#5 165486156#6 -422206222#2 -422206222#1 -422206222#0"/>
+        <busStop id="1559415866" name="新街口东站"/>
+    </ptLine>
+    <ptLine id="1929975" name="南京公交25路" line="25" type="bus" vClass="bus" completeness="0.22">
+        <route edges="-422206243#2 -422206243#1 -422206243#0 -422206222#2 -422206222#1 -422206222#0"/>
+        <busStop id="1560705286" name="珠江路南站;赛百味"/>
+        <busStop id="1559415866" name="新街口东站"/>
+    </ptLine>
+    <ptLine id="1975876" name="南京公交4路" line="4" type="bus" vClass="bus" completeness="0.50">
+        <route edges="779232503#0 779232503#1 779232503#2 147608333#0 147608333#1 147608333#2"/>
+        <busStop id="1596449713" name="新街口西站"/>
+    </ptLine>
+    <ptLine id="2131023" name="南京公交3路" line="3" type="bus" vClass="bus" completeness="1.00">
+        <busStop id="1712482002" name="大行宫北站"/>
+        <busStop id="1712482001" name="大行宫"/>
+        <busStop id="1559415866" name="新街口东站"/>
+        <busStop id="1562115865" name="大行宫西站"/>
+    </ptLine>
+    <ptLine id="2131091" name="南京公交163路" line="163" type="bus" vClass="bus" completeness="0.50">
+        <route edges="-422206243#2 -422206243#1 -422206243#0 -422206222#2 -422206222#1 -422206222#0"/>
+        <busStop id="1562115865" name="大行宫西站"/>
+    </ptLine>
+    <ptLine id="3413088" name="南京地铁2号线: 经天路 =&gt; 油坊桥" line="2" type="subway" vClass="rail_urban" completeness="0.65">
+        <busStop id="8040236681" name="钟灵街"/>
+        <busStop id="8040236643" name="孝陵卫"/>
+        <busStop id="8040236606" name="下马坊"/>
+        <busStop id="8040236573" name="苜蓿园"/>
+        <busStop id="8040236537" name="明故宫"/>
+        <busStop id="8040236514" name="西安门"/>
+        <busStop id="8040230684" name="大行宫"/>
+        <busStop id="8039975519" name="新街口"/>
+        <busStop id="8039975502" name="上海路"/>
+        <busStop id="8039975478" name="汉中门"/>
+        <busStop id="8039975443" name="莫愁湖"/>
+        <busStop id="8039975398" name="云锦路"/>
+        <busStop id="8039975340" name="集庆门大街"/>
+        <busStop id="8039975312" name="兴隆大街"/>
+        <busStop id="8039975291" name="奥体东"/>
+        <busStop id="8039975259" name="元通"/>
+        <busStop id="1236938077" name="雨润大街"/>
+    </ptLine>
+    <ptLine id="5454532" name="南京地铁3号线 林场至秣周东路" line="3" type="subway" vClass="rail_urban" completeness="0.97">
+        <busStop id="8042210212" name="星火路"/>
+        <busStop id="8042210252" name="东大成贤学院"/>
+        <busStop id="8042210297" name="泰冯路"/>
+        <busStop id="8042210328" name="天润城"/>
+        <busStop id="8042210383" name="柳洲东路"/>
+        <busStop id="8042210406" name="上元门"/>
+        <busStop id="8042210456" name="五塘广场"/>
+        <busStop id="8042210504" name="小市"/>
+        <busStop id="8042210545" name="南京站"/>
+        <busStop id="8042210592" name="南京林业大学·新庄"/>
+        <busStop id="8042210639" name="鸡鸣寺"/>
+        <busStop id="8042210650" name="浮桥"/>
+        <busStop id="8042210670" name="大行宫"/>
+        <busStop id="8042375361" name="常府街"/>
+        <busStop id="8042405492" name="夫子庙"/>
+        <busStop id="8042405537" name="武定门"/>
+        <busStop id="8042405569" name="雨花门"/>
+        <busStop id="8042405596" name="卡子门"/>
+        <busStop id="8042405628" name="大明路"/>
+        <busStop id="8042405660" name="明发广场"/>
+        <busStop id="8042405690" name="南京南站"/>
+        <busStop id="8042405709" name="宏运大道"/>
+        <busStop id="8042405738" name="胜太西路"/>
+        <busStop id="8042405787" name="天元西路"/>
+        <busStop id="8042405830" name="九龙湖"/>
+        <busStop id="8042405880" name="诚信大道"/>
+        <busStop id="8042405906" name="东大九龙湖校区"/>
+        <busStop id="8042405947" name="秣周东路"/>
+    </ptLine>
+    <ptLine id="7885542" name="南京地铁3号线 秣周东路至林场" line="3" type="subway" vClass="rail_urban" completeness="0.97">
+        <busStop id="8042405948" name="秣周东路"/>
+        <busStop id="8042405907" name="东大九龙湖校区"/>
+        <busStop id="8042405881" name="诚信大道"/>
+        <busStop id="8042405831" name="九龙湖"/>
+        <busStop id="8042405788" name="天元西路"/>
+        <busStop id="8042405739" name="胜太西路"/>
+        <busStop id="8042405710" name="宏运大道"/>
+        <busStop id="8042405691" name="南京南站"/>
+        <busStop id="8042405661" name="明发广场"/>
+        <busStop id="8042405629" name="大明路"/>
+        <busStop id="8042405597" name="卡子门"/>
+        <busStop id="8042405570" name="雨花门"/>
+        <busStop id="8042405538" name="武定门"/>
+        <busStop id="8042405493" name="夫子庙"/>
+        <busStop id="8042375362" name="常府街"/>
+        <busStop id="8042210671" name="大行宫"/>
+        <busStop id="8042210651" name="浮桥"/>
+        <busStop id="8042210640" name="鸡鸣寺"/>
+        <busStop id="8042210593" name="南京林业大学·新庄"/>
+        <busStop id="8042210546" name="南京站"/>
+        <busStop id="8042210505" name="小市"/>
+        <busStop id="8042210457" name="五塘广场"/>
+        <busStop id="8042210407" name="上元门"/>
+        <busStop id="8042210384" name="柳洲东路"/>
+        <busStop id="8042210329" name="天润城"/>
+        <busStop id="8042210298" name="泰冯路"/>
+        <busStop id="8042210253" name="东大成贤学院"/>
+        <busStop id="8042210213" name="星火路"/>
+    </ptLine>
+</ptLines>

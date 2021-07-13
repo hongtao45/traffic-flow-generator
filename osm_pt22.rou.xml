@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2021-07-12 16:45:58.710015 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_9_2+0000-4206cfae24
+  options: -n osm.net.xml -o osm_pt22.rou.xml -e 3600 -p 600 <doubleminus>random-begin <doubleminus>seed 42 <doubleminus>ptstops osm_stops.add.xml <doubleminus>ptlines osm_ptlines.xml <doubleminus>ignore-errors <doubleminus>vtype-prefix pt_ <doubleminus>min-stops 0 <doubleminus>extend-to-fringe <doubleminus>verbose
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="rail_urban"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_aerialway" vClass="bus"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_bus_5:0" edges="826049219 422848103 826049217#0 826049217#1 826049217#2 422206263#0 422206263#1 422206263#2 422206263#3 422206222#0 -422206222#0" >
+    </route>
+    <route id="pt_bus_25:0" edges="-422206243#2 -422206243#1 -422206243#0 -422206222#2 -422206222#1 -422206222#0" >
+    </route>
+    <route id="pt_subway_1:0" edges="857751482 857738627#0 857738627#1 857738624" >
+        <stop busStop="7996788918" duration="30.00" until="49.0"/> <!-- 张府园 -->
+        <stop busStop="7999205744" duration="30.00" until="140.0"/> <!-- 新街口 -->
+        <stop busStop="7999205742" duration="30.00" until="225.0"/> <!-- 珠江路 -->
+    </route>
+    <route id="pt_subway_1:1" edges="857738622 857738626#0 857738626#1 857751480" >
+        <stop busStop="7999205743" duration="30.00" until="74.0"/> <!-- 珠江路 -->
+        <stop busStop="7999205745" duration="30.00" until="159.0"/> <!-- 新街口 -->
+        <stop busStop="7996788886" duration="30.00" until="250.0"/> <!-- 张府园 -->
+    </route>
+    <route id="pt_bus_1:2" edges="165486156#0 165486156#1 165486156#2 165486156#3 -89637244#5 -89637244#4 -89637244#3 -89637244#2 -89637244#1 223942189 -422206222#0" >
+    </route>
+    <route id="pt_bus_4:0" edges="779232503#0 779232503#1 779232503#2 147608333#0 147608333#1 147608333#2" >
+    </route>
+    <route id="pt_bus_163:0" edges="-422206243#2 -422206243#1 -422206243#0 -422206222#2 -422206222#1 -422206222#0" >
+    </route>
+    <route id="pt_subway_2:0" edges="863035755#0 863035755#1" >
+        <stop busStop="8039975195" duration="30.00" until="112.0"/> <!-- 雨润大街 -->
+        <stop busStop="8039975258" duration="30.00" until="219.0"/> <!-- 元通 -->
+        <stop busStop="8039975290" duration="30.00" until="310.0"/> <!-- 奥体东 -->
+        <stop busStop="8039975311" duration="30.00" until="407.0"/> <!-- 兴隆大街 -->
+        <stop busStop="8039975339" duration="30.00" until="508.0"/> <!-- 集庆门大街 -->
+        <stop busStop="8039975397" duration="30.00" until="603.0"/> <!-- 云锦路 -->
+        <stop busStop="8039975442" duration="30.00" until="665.0"/> <!-- 莫愁湖 -->
+        <stop busStop="8039975477" duration="30.00" until="696.0"/> <!-- 汉中门 -->
+        <stop busStop="8039975501" duration="30.00" until="727.0"/> <!-- 上海路 -->
+        <stop busStop="8039975518" duration="30.00" until="902.0"/> <!-- 新街口 -->
+        <stop busStop="8040230683" duration="30.00" until="987.0"/> <!-- 大行宫 -->
+        <stop busStop="8040236513" duration="30.00" until="1072.0"/> <!-- 西安门 -->
+        <stop busStop="8040236536" duration="30.00" until="1168.0"/> <!-- 明故宫 -->
+        <stop busStop="8040236572" duration="30.00" until="1269.0"/> <!-- 苜蓿园 -->
+        <stop busStop="8040236605" duration="30.00" until="1364.0"/> <!-- 下马坊 -->
+        <stop busStop="8040236642" duration="30.00" until="1446.0"/> <!-- 孝陵卫 -->
+        <stop busStop="8040236671" duration="30.00" until="1536.0"/> <!-- 钟灵街 -->
+    </route>
+    <route id="pt_subway_2:1" edges="863066531#0 863066531#1" >
+        <stop busStop="8040236681" duration="30.00" until="92.0"/> <!-- 钟灵街 -->
+        <stop busStop="8040236643" duration="30.00" until="182.0"/> <!-- 孝陵卫 -->
+        <stop busStop="8040236606" duration="30.00" until="263.0"/> <!-- 下马坊 -->
+        <stop busStop="8040236573" duration="30.00" until="358.0"/> <!-- 苜蓿园 -->
+        <stop busStop="8040236537" duration="30.00" until="460.0"/> <!-- 明故宫 -->
+        <stop busStop="8040236514" duration="30.00" until="556.0"/> <!-- 西安门 -->
+        <stop busStop="8040230684" duration="30.00" until="641.0"/> <!-- 大行宫 -->
+        <stop busStop="8039975519" duration="30.00" until="711.0"/> <!-- 新街口 -->
+        <stop busStop="8039975502" duration="30.00" until="801.0"/> <!-- 上海路 -->
+        <stop busStop="8039975478" duration="30.00" until="880.0"/> <!-- 汉中门 -->
+        <stop busStop="8039975443" duration="30.00" until="965.0"/> <!-- 莫愁湖 -->
+        <stop busStop="8039975398" duration="30.00" until="1059.0"/> <!-- 云锦路 -->
+        <stop busStop="8039975340" duration="30.00" until="1155.0"/> <!-- 集庆门大街 -->
+        <stop busStop="8039975312" duration="30.00" until="1256.0"/> <!-- 兴隆大街 -->
+        <stop busStop="8039975291" duration="30.00" until="1353.0"/> <!-- 奥体东 -->
+        <stop busStop="8039975259" duration="30.00" until="1444.0"/> <!-- 元通 -->
+        <stop busStop="1236938077" duration="30.00" until="1490.0"/> <!-- 雨润大街 -->
+    </route>
+    <route id="pt_subway_3:1" edges="863303976" >
+        <stop busStop="8042210212" duration="30.00" until="67.0"/> <!-- 星火路 -->
+        <stop busStop="8042210252" duration="30.00" until="152.0"/> <!-- 东大成贤学院 -->
+        <stop busStop="8042210297" duration="30.00" until="239.0"/> <!-- 泰冯路 -->
+        <stop busStop="8042210328" duration="30.00" until="341.0"/> <!-- 天润城 -->
+        <stop busStop="8042210383" duration="30.00" until="454.0"/> <!-- 柳洲东路 -->
+        <stop busStop="8042210406" duration="30.00" until="628.0"/> <!-- 上元门 -->
+        <stop busStop="8042210456" duration="30.00" until="710.0"/> <!-- 五塘广场 -->
+        <stop busStop="8042210504" duration="30.00" until="826.0"/> <!-- 小市 -->
+        <stop busStop="8042210545" duration="30.00" until="921.0"/> <!-- 南京站 -->
+        <stop busStop="8042210592" duration="30.00" until="1042.0"/> <!-- 南京林业大学·新庄 -->
+        <stop busStop="8042210639" duration="30.00" until="1188.0"/> <!-- 鸡鸣寺 -->
+        <stop busStop="8042210650" duration="30.00" until="1268.0"/> <!-- 浮桥 -->
+        <stop busStop="8042210670" duration="30.00" until="1346.0"/> <!-- 大行宫 -->
+        <stop busStop="8042375361" duration="30.00" until="1430.0"/> <!-- 常府街 -->
+        <stop busStop="8042405492" duration="30.00" until="1515.0"/> <!-- 夫子庙 -->
+        <stop busStop="8042405537" duration="30.00" until="1610.0"/> <!-- 武定门 -->
+        <stop busStop="8042405569" duration="30.00" until="1699.0"/> <!-- 雨花门 -->
+        <stop busStop="8042405596" duration="30.00" until="1782.0"/> <!-- 卡子门 -->
+        <stop busStop="8042405628" duration="30.00" until="1871.0"/> <!-- 大明路 -->
+        <stop busStop="8042405660" duration="30.00" until="1959.0"/> <!-- 明发广场 -->
+        <stop busStop="8042405690" duration="30.00" until="2044.0"/> <!-- 南京南站 -->
+        <stop busStop="8042405709" duration="30.00" until="2139.0"/> <!-- 宏运大道 -->
+        <stop busStop="8042405738" duration="30.00" until="2251.0"/> <!-- 胜太西路 -->
+        <stop busStop="8042405787" duration="30.00" until="2364.0"/> <!-- 天元西路 -->
+        <stop busStop="8042405830" duration="30.00" until="2447.0"/> <!-- 九龙湖 -->
+        <stop busStop="8042405880" duration="30.00" until="2478.0"/> <!-- 诚信大道 -->
+        <stop busStop="8042405906" duration="30.00" until="2509.0"/> <!-- 东大九龙湖校区 -->
+        <stop busStop="8042405947" duration="30.00" until="2540.0"/> <!-- 秣周东路 -->
+    </route>
+    <route id="pt_subway_3:2" edges="863326711" >
+        <stop busStop="8042405948" duration="30.00" until="31.0"/> <!-- 秣周东路 -->
+        <stop busStop="8042405907" duration="30.00" until="187.0"/> <!-- 东大九龙湖校区 -->
+        <stop busStop="8042405881" duration="30.00" until="284.0"/> <!-- 诚信大道 -->
+        <stop busStop="8042405831" duration="30.00" until="386.0"/> <!-- 九龙湖 -->
+        <stop busStop="8042405788" duration="30.00" until="521.0"/> <!-- 天元西路 -->
+        <stop busStop="8042405739" duration="30.00" until="633.0"/> <!-- 胜太西路 -->
+        <stop busStop="8042405710" duration="30.00" until="746.0"/> <!-- 宏运大道 -->
+        <stop busStop="8042405691" duration="30.00" until="841.0"/> <!-- 南京南站 -->
+        <stop busStop="8042405661" duration="30.00" until="925.0"/> <!-- 明发广场 -->
+        <stop busStop="8042405629" duration="30.00" until="1014.0"/> <!-- 大明路 -->
+        <stop busStop="8042405597" duration="30.00" until="1103.0"/> <!-- 卡子门 -->
+        <stop busStop="8042405570" duration="30.00" until="1186.0"/> <!-- 雨花门 -->
+        <stop busStop="8042405538" duration="30.00" until="1275.0"/> <!-- 武定门 -->
+        <stop busStop="8042405493" duration="30.00" until="1370.0"/> <!-- 夫子庙 -->
+        <stop busStop="8042375362" duration="30.00" until="1455.0"/> <!-- 常府街 -->
+        <stop busStop="8042210671" duration="30.00" until="1539.0"/> <!-- 大行宫 -->
+        <stop busStop="8042210651" duration="30.00" until="1617.0"/> <!-- 浮桥 -->
+        <stop busStop="8042210640" duration="30.00" until="1697.0"/> <!-- 鸡鸣寺 -->
+        <stop busStop="8042210593" duration="30.00" until="1843.0"/> <!-- 南京林业大学·新庄 -->
+        <stop busStop="8042210546" duration="30.00" until="1964.0"/> <!-- 南京站 -->
+        <stop busStop="8042210505" duration="30.00" until="2059.0"/> <!-- 小市 -->
+        <stop busStop="8042210457" duration="30.00" until="2175.0"/> <!-- 五塘广场 -->
+        <stop busStop="8042210407" duration="30.00" until="2258.0"/> <!-- 上元门 -->
+        <stop busStop="8042210384" duration="30.00" until="2383.0"/> <!-- 柳洲东路 -->
+        <stop busStop="8042210329" duration="30.00" until="2414.0"/> <!-- 天润城 -->
+        <stop busStop="8042210298" duration="30.00" until="2445.0"/> <!-- 泰冯路 -->
+        <stop busStop="8042210253" duration="30.00" until="2476.0"/> <!-- 东大成贤学院 -->
+        <stop busStop="8042210213" duration="30.00" until="2507.0"/> <!-- 星火路 -->
+    </route>
+    <flow id="pt_bus_5:0" type="pt_bus" route="pt_bus_5:0" begin="52.0" end="3652.0" period="600" line="5:0" >
+        <param key="name" value="南京公交5路"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_bus_25:0" type="pt_bus" route="pt_bus_25:0" begin="165.0" end="3765.0" period="600" line="25:0" >
+        <param key="name" value="南京公交25路"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_1:0" type="pt_subway" route="pt_subway_1:0" begin="15.0" end="3615.0" period="600" line="1:0" >
+        <param key="name" value="南京地铁1号线: 中国药科大学 =&gt; 迈皋桥"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_subway_1:1" type="pt_subway" route="pt_subway_1:1" begin="17.0" end="3617.0" period="600" line="1:1" >
+        <param key="name" value="南京地铁1号线: 迈皋桥 =&gt; 中国药科大学"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_bus_1:2" type="pt_bus" route="pt_bus_1:2" begin="133.0" end="3733.0" period="600" line="1:2" >
+        <param key="name" value="南京公交1路"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_bus_4:0" type="pt_bus" route="pt_bus_4:0" begin="253.0" end="3853.0" period="600" line="4:0" >
+        <param key="name" value="南京公交4路"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_bus_163:0" type="pt_bus" route="pt_bus_163:0" begin="383.0" end="3983.0" period="600" line="163:0" >
+        <param key="name" value="南京公交163路"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_subway_2:0" type="pt_subway" route="pt_subway_2:0" begin="15.0" end="3615.0" period="600" line="2:0" >
+        <param key="name" value="南京地铁2号线: 油坊桥 =&gt; 经天路"/>
+        <param key="completeness" value="0.65"/>
+    </flow>
+    <flow id="pt_subway_2:1" type="pt_subway" route="pt_subway_2:1" begin="406.0" end="4006.0" period="600" line="2:1" >
+        <param key="name" value="南京地铁2号线: 经天路 =&gt; 油坊桥"/>
+        <param key="completeness" value="0.65"/>
+    </flow>
+    <flow id="pt_subway_3:1" type="pt_subway" route="pt_subway_3:1" begin="441.0" end="4041.0" period="600" line="3:1" >
+        <param key="name" value="南京地铁3号线 林场至秣周东路"/>
+        <param key="completeness" value="0.97"/>
+    </flow>
+    <flow id="pt_subway_3:2" type="pt_subway" route="pt_subway_3:2" begin="535.0" end="4135.0" period="600" line="3:2" >
+        <param key="name" value="南京地铁3号线 秣周东路至林场"/>
+        <param key="completeness" value="0.97"/>
+    </flow>
+</routes>
