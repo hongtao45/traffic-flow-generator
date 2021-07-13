@@ -1,23 +1,16 @@
-# Frank-Wolfe-NLP
+# traffic-flow-generator
 
-## frank ewolfe 求解非线性规划问题
+#### Usage:
+本部分使用traffic-flow-generator.py来读取现有的路网文件，然后生成交通流，主要的工作流程模仿了sumo内置的osmWebWiizard.py，流程如下：
+1. 生成batch文件、sumocfg文件
+2. 运行batch文件，生成trip和rou文件
+3. 点击运行sumocfg文件
 
-通过求解一系列线性规划（LP）问题，来确定下面凸规划问题的最优解：min f (x)
 
-subject:
-    Ax<=b;
-    Bx=0;
 
-## 算法步骤：
+#### 使用说明
 
-1. 选择一个可行解的方向；
+1.  xxxx
+2.  xxxx
+3.  xxxx
 
-2. 确定可行下降方向；
-
-3. 判断停止条件；
-
-4. 通过一维搜索求解线性规问题；
-
-5. 向前迭代；
-
-6. 回到第一步，开始下轮迭代；
